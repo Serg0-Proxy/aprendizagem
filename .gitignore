@@ -1,0 +1,3 @@
+aprendenv/
+__pycache__/
+*.keras
