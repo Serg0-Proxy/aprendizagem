@@ -1,5 +1,7 @@
 # Classificação de Imagens de Paisagens com CNN
 
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Serg0-Proxy/aprendizagem/blob/main/aprendizado.ipynb)
+
 Projeto de aprendizado de máquina que treina uma rede neural convolucional (CNN) com TensorFlow/Keras para classificar imagens em 4 categorias de paisagem.
 
 ## Classes
@@ -13,9 +15,10 @@ Projeto de aprendizado de máquina que treina uma rede neural convolucional (CNN
 
 ```
 aprendizagem/
-├── Treinamento/      # 1792 imagens de treino (uma pasta por classe)
-├── Validacao/        # 420 imagens de validação (uma pasta por classe)
-├── aprendizado.py    # script de treino e avaliação
+├── Treinamento/        # 1792 imagens de treino (uma pasta por classe)
+├── Validacao/          # 420 imagens de validação (uma pasta por classe)
+├── aprendizado.py      # script de treino e avaliação (execução local)
+├── aprendizado.ipynb   # notebook para executar no Google Colab
 └── README.md
 ```
 
@@ -24,8 +27,17 @@ aprendizagem/
 - Python 3
 - TensorFlow / Keras
 - Pillow
+- Matplotlib
 
 ## Como executar
+
+### Opção 1: Google Colab (sem instalar nada)
+
+1. Clique no botão **Abrir no Colab** no topo desta página.
+2. No menu, vá em **Ambiente de execução > Executar tudo**.
+3. Ao final, use a última célula para enviar uma imagem sua e ver a classe prevista pelo modelo.
+
+### Opção 2: Localmente
 
 1. Clone o repositório:
 
@@ -44,7 +56,7 @@ aprendizagem/
 3. Instale as dependências:
 
 ```powershell
-   pip install tensorflow pillow
+   pip install tensorflow pillow matplotlib
 ```
 
 4. Execute o treinamento:
